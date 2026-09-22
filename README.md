@@ -1,6 +1,9 @@
-# 📄 API de Conversion de Devises — Documentation Complète
+# API de Conversion de Devises — Documentation Complète
 
-## 📋 Table des matières
+<img width="1897" height="981" alt="image" src="https://github.com/user-attachments/assets/5bcb5ab8-c6bd-487d-ae30-9f3d724ae108" />
+
+
+##  Table des matières
 
 1. [Présentation du projet](#1-présentation-du-projet)
 2. [Stack technologique](#2-stack-technologique)
@@ -67,7 +70,7 @@ cd Conversion-de-Devises
 
 ### 4.2 Configurer la clé API
 
-⚠️ La clé API ne doit **jamais** être écrite en dur dans `application.properties` (ce fichier est versionné sur GitHub). Elle se configure via la variable d'environnement `EXCHANGE_API_KEY` :
+La clé API ne doit **jamais** être écrite en dur dans `application.properties` (ce fichier est versionné sur GitHub). Elle se configure via la variable d'environnement `EXCHANGE_API_KEY` :
 
 ```bash
 # Linux / Mac
@@ -201,10 +204,10 @@ Content-Type: application/json
 
 | Code | Statut | Signification | Quand ? |
 |------|--------|---------------|---------|
-| **200** | OK | ✅ Conversion réussie | La conversion a été effectuée correctement |
-| **400** | Bad Request | ❌ Requête invalide | Champs manquants, montant ≤ 0, devise inexistante ou format incorrect |
-| **502** | Bad Gateway | ⚠️ Erreur API externe | L'API ExchangeRate-API est indisponible ou a retourné une erreur |
-| **500** | Internal Server Error | 💥 Erreur interne | Erreur inattendue dans l'application (bug, exception non gérée) |
+| **200** | OK |  Conversion réussie | La conversion a été effectuée correctement |
+| **400** | Bad Request |  Requête invalide | Champs manquants, montant ≤ 0, devise inexistante ou format incorrect |
+| **502** | Bad Gateway |  Erreur API externe | L'API ExchangeRate-API est indisponible ou a retourné une erreur |
+| **500** | Internal Server Error |  Erreur interne | Erreur inattendue dans l'application (bug, exception non gérée) |
 
 ### Détail des erreurs 400 Bad Request
 
